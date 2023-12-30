@@ -1,8 +1,8 @@
 import axios from "axios";
 import { ApiUrl } from "../utils/apiUrl";
 
-export const get = () => {
-  return axios.get(ApiUrl.BASE_URL);
+export const get = (url: string) => {
+  return axios.get(ApiUrl.BASE_URL + "/" + url);
 };
 export const getById = (url: string, id: string) => {
   return axios.get(ApiUrl.BASE_URL + "/" + url + "/" + id);
