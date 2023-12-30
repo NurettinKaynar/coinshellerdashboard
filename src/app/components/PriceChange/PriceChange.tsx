@@ -45,7 +45,7 @@ const PriceChange = () => {
     );
   };
   return (
-    <div className="bg-gray-700 flex-shrink w-1/4 rounded flex flex-col ">
+    <div className="bg-gray-700 flex-shrink md:w-1/4 w-full rounded flex flex-col ">
       <div className="w-full border-b-slate-600 border-b p-4 ">
         <span className="font-light text-2xl text-slate-400">
           BTC Price Change

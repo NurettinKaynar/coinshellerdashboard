@@ -43,7 +43,7 @@ const Table = () => {
 
   const Row = ({ rowData }: { rowData: MarketData }) => {
     return (
-      <div className=" text-light text-slate-500 text-xl w-full p-4 border-b border-b-slate-500 grid grid-rows-1 grid-cols-5 grid-flow-col ">
+      <div className=" text-light text-slate-500 text-xl w-full p-4 border-b border-b-slate-500 grid md:grid-rows-1 grid-rows-5  md:grid-cols-5 grid-cols-1 grid-flow-col ">
         <div className="  flex flex-grow items-center gap-2">
           {returnIcon(rowData.baseId)}
           <span>
@@ -67,9 +67,9 @@ const Table = () => {
 
   return (
     <div className="rounded flex flex-col w-full bg-gray-700">
-      <div className="flex justify-between items-center p-4 border-b border-b-slate-500 ">
+      <div className="flex justify-between md:flex-row flex-col md:items-center items-start gap-2 p-4 border-b border-b-slate-500 ">
         <span className="text-slate-500 font-light text-2xl">Market</span>
-        <div className=" p-4 rounded-full flex justify-between items-center border border-gray-500">
+        <div className=" p-4 rounded-full w-full md:w-1/3 flex justify-between items-center border border-gray-500">
           <input
             placeholder="Search..."
             type="text"
@@ -78,7 +78,7 @@ const Table = () => {
           <Search color="gray" />
         </div>
       </div>
-      <div className=" text-slate-500  border-b border-b-slate-500 p-4 grid grid-rows-1 grid-cols-5 grid-flow-col">
+      <div className=" text-slate-500  border-b border-b-slate-500 p-4 grid md:grid-rows-1 grid-rows-5 md:grid-cols-5 grid-flow-col">
         <span className="text-light">Market</span>
         <span className="text-light">Price</span>
         <span className="text-light">Volume Usd 24 Hour</span>

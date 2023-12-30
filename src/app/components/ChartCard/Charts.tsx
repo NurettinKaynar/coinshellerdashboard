@@ -60,7 +60,7 @@ const Charts = () => {
 
   return (
     <div className="bg-gray-700 w-full flex-grow  rounded flex flex-col   items-center gap-2 ">
-      <div className=" items-center w-full flex justify-between p-4">
+      <div className=" items-center w-full flex md:flex-row flex-col justify-between p-4">
         <span className="font-light text-2xl ">Price</span>
         <SwitchButtons onButtonClick={changeChartData} />
       </div>

@@ -58,7 +58,7 @@ const Sidebar = () => {
     },
   ];
   return (
-    <div className="w-1/6 h-full p-6  flex-col gap-96 ">
+    <div className=" hidden md:flex md:w-1/9 h-full p-6  flex-col  ">
       <Image src={Logo} alt="logo" />
       <div className="flex flex-col gap-5 mt-20 ">
         {menuItem.map((item: MenuItemModel) => (

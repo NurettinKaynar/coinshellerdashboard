@@ -2,7 +2,7 @@ import React from "react";
 import { Search, Sun, CreditCard } from "react-feather";
 const TopBar = () => {
   return (
-    <section className="p-4 flex justify-between items-center">
+    <section className="p-4 md:flex-row flex-col gap-2 flex justify-between items-center">
       <div className=" p-4 rounded-full flex justify-between items-center border border-gray-700">
         <input
           placeholder="Search..."
