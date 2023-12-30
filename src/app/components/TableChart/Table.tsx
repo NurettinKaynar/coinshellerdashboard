@@ -69,7 +69,7 @@ const Table = () => {
     <div className="rounded flex flex-col w-full bg-gray-700">
       <div className="flex justify-between md:flex-row flex-col md:items-center items-start gap-2 p-4 border-b border-b-slate-500 ">
         <span className="text-slate-500 font-light text-2xl">Market</span>
-        <div className=" p-4 rounded-full w-full md:w-1/3 flex justify-between items-center border border-gray-500">
+        <div className=" p-4 rounded-full w-full md:w-1/5 flex justify-between items-center border border-gray-500">
           <input
             placeholder="Search..."
             type="text"
