@@ -4,16 +4,15 @@ import MiniCard from "../MiniCard/MiniCard";
 import { getById } from "@/app/core/services/httpEntityService";
 import { ApiUrl } from "@/app/core/utils/apiUrl";
 import { AxiosError, AxiosResponse } from "axios";
-import { AssetDto } from "@/app/core/interfaces";
-interface CardData {
-  data: AssetDto;
-  timestamp: number;
-}
+import { AssetDto, DataResultModelDto } from "@/app/core/interfaces";
+
 const Cards = () => {
-  const [CardData, setCardData] = useState<CardData | null>(null);
+  const [CardData, setCardData] = useState<DataResultModelDto<AssetDto> | null>(
+    null
+  );
   const getAssets = () => {
     getById(ApiUrl.GET_ASSETS, "bitcoin")
-      .then((res: AxiosResponse) => {
+      .then((res: AxiosResponse<DataResultModelDto<AssetDto>>) => {
         if ((res.status = 200)) {
           console.log("response data", res.data);
 
