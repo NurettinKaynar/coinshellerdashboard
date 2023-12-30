@@ -1,6 +1,7 @@
 import TopBar from "./components/topbar/topbar";
 import Sidebar from "./components/sideBar/Sidebar";
 import MiniCard from "./components/MiniCard/MiniCard";
+import Cards from "./components/Cards/Cards";
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
         <TopBar />
         <div className="p-6 h-full bg-gradient-to-r from-gray-900 to-gray-900">
           <div className="flex gap-2 ">
-            <MiniCard />
+            <Cards />
           </div>
         </div>
       </div>
